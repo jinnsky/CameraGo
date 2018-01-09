@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EC05B2C31FEA3DE000B074AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B2C21FEA3DE000B074AB /* AppDelegate.swift */; };
-		EC05B2C51FEA3DE000B074AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B2C41FEA3DE000B074AB /* ViewController.swift */; };
-		EC05B2C81FEA3DE000B074AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC05B2C61FEA3DE000B074AB /* Main.storyboard */; };
 		EC05B2CA1FEA3DE000B074AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC05B2C91FEA3DE000B074AB /* Assets.xcassets */; };
 		EC05B2CD1FEA3DE100B074AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC05B2CB1FEA3DE000B074AB /* LaunchScreen.storyboard */; };
 		EC05B2D81FEA3DE100B074AB /* SwiftCameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B2D71FEA3DE100B074AB /* SwiftCameraAppTests.swift */; };
 		EC05B2E31FEA3DE100B074AB /* SwiftCameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B2E21FEA3DE100B074AB /* SwiftCameraAppUITests.swift */; };
+		ECBB8EFC1FFE170D00DC8E32 /* SCCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */; };
+		ECBB8F011FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */; };
+		ECBB8F041FFE1E2C00DC8E32 /* SCCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +37,6 @@
 /* Begin PBXFileReference section */
 		EC05B2BF1FEA3DE000B074AB /* SwiftCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC05B2C21FEA3DE000B074AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC05B2C41FEA3DE000B074AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC05B2C71FEA3DE000B074AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC05B2C91FEA3DE000B074AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC05B2CC1FEA3DE000B074AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC05B2CE1FEA3DE100B074AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,9 @@
 		EC05B2DE1FEA3DE100B074AB /* SwiftCameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC05B2E21FEA3DE100B074AB /* SwiftCameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCameraAppUITests.swift; sourceTree = "<group>"; };
 		EC05B2E41FEA3DE100B074AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraViewController.swift; sourceTree = "<group>"; };
+		ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraViewControllerDelegate.swift; sourceTree = "<group>"; };
+		ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,10 @@
 		EC05B2C11FEA3DE000B074AB /* SwiftCameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECBB8F021FFE1E0E00DC8E32 /* Views */,
+				ECBB8EFF1FFE188B00DC8E32 /* Delegates */,
+				ECBB8EF81FFE15E800DC8E32 /* ViewControllers */,
 				EC05B2C21FEA3DE000B074AB /* AppDelegate.swift */,
-				EC05B2C41FEA3DE000B074AB /* ViewController.swift */,
-				EC05B2C61FEA3DE000B074AB /* Main.storyboard */,
 				EC05B2C91FEA3DE000B074AB /* Assets.xcassets */,
 				EC05B2CB1FEA3DE000B074AB /* LaunchScreen.storyboard */,
 				EC05B2CE1FEA3DE100B074AB /* Info.plist */,
@@ -123,6 +126,30 @@
 				EC05B2E41FEA3DE100B074AB /* Info.plist */,
 			);
 			path = SwiftCameraAppUITests;
+			sourceTree = "<group>";
+		};
+		ECBB8EF81FFE15E800DC8E32 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECBB8EFF1FFE188B00DC8E32 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		ECBB8F021FFE1E0E00DC8E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +261,6 @@
 			files = (
 				EC05B2CD1FEA3DE100B074AB /* LaunchScreen.storyboard in Resources */,
 				EC05B2CA1FEA3DE000B074AB /* Assets.xcassets in Resources */,
-				EC05B2C81FEA3DE000B074AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC05B2C51FEA3DE000B074AB /* ViewController.swift in Sources */,
+				ECBB8F041FFE1E2C00DC8E32 /* SCCameraPreviewView.swift in Sources */,
+				ECBB8EFC1FFE170D00DC8E32 /* SCCameraViewController.swift in Sources */,
+				ECBB8F011FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift in Sources */,
 				EC05B2C31FEA3DE000B074AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC05B2C61FEA3DE000B074AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC05B2C71FEA3DE000B074AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC05B2CB1FEA3DE000B074AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -429,11 +449,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 424M5254LK;
 				INFOPLIST_FILE = SwiftCameraApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snapchat.SwiftCameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,11 +465,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 424M5254LK;
 				INFOPLIST_FILE = SwiftCameraApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snapchat.SwiftCameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
