@@ -182,19 +182,24 @@ open class SCCameraViewController: UIViewController {
             
             if previewLayerConnection.isVideoOrientationSupported {
                 switch (orientation) {
-                case .portrait: updatePreviewLayer(layer: previewLayerConnection, orientation: .portrait)
+                case .portrait:
+                    updatePreviewLayer(layer: previewLayerConnection, orientation: .portrait)
                     break
                     
-                case .landscapeRight: updatePreviewLayer(layer: previewLayerConnection, orientation: .landscapeLeft)
+                case .landscapeRight:
+                    updatePreviewLayer(layer: previewLayerConnection, orientation: .landscapeLeft)
                     break
                     
-                case .landscapeLeft: updatePreviewLayer(layer: previewLayerConnection, orientation: .landscapeRight)
+                case .landscapeLeft:
+                    updatePreviewLayer(layer: previewLayerConnection, orientation: .landscapeRight)
                     break
                     
-                case .portraitUpsideDown: updatePreviewLayer(layer: previewLayerConnection, orientation: .portraitUpsideDown)
+                case .portraitUpsideDown:
+                    updatePreviewLayer(layer: previewLayerConnection, orientation: .portraitUpsideDown)
                     break
                     
-                default: updatePreviewLayer(layer: previewLayerConnection, orientation: .portrait)
+                default:
+                    updatePreviewLayer(layer: previewLayerConnection, orientation: .portrait)
                     break
                 }
             }
@@ -741,7 +746,7 @@ open class SCCameraViewController: UIViewController {
     }
 }
 
-extension SCCameraViewController : SCCameraViewControllerDelegate {
+extension SCCameraViewController : SCCameraButtonDelegate {
     public func setMaxiumVideoDuration() -> Double {
         return maximumVideoDuration
     }
