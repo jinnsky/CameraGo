@@ -12,6 +12,9 @@
 		EC05B2CD1FEA3DE100B074AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC05B2CB1FEA3DE000B074AB /* LaunchScreen.storyboard */; };
 		EC05B2D81FEA3DE100B074AB /* SwiftCameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B2D71FEA3DE100B074AB /* SwiftCameraAppTests.swift */; };
 		EC05B2E31FEA3DE100B074AB /* SwiftCameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B2E21FEA3DE100B074AB /* SwiftCameraAppUITests.swift */; };
+		ECA952082010C2110031CAB3 /* SCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA952072010C2110031CAB3 /* SCMainViewController.swift */; };
+		ECA9520A2010C3EF0031CAB3 /* SCPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA952092010C3EF0031CAB3 /* SCPhotoViewController.swift */; };
+		ECADB39F2004B3F30097E437 /* SCCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECADB39E2004B3F30097E437 /* SCCameraButton.swift */; };
 		ECBB8EFC1FFE170D00DC8E32 /* SCCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */; };
 		ECBB8F011FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */; };
 		ECBB8F041FFE1E2C00DC8E32 /* SCCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */; };
@@ -46,6 +49,9 @@
 		EC05B2DE1FEA3DE100B074AB /* SwiftCameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC05B2E21FEA3DE100B074AB /* SwiftCameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCameraAppUITests.swift; sourceTree = "<group>"; };
 		EC05B2E41FEA3DE100B074AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA952072010C2110031CAB3 /* SCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMainViewController.swift; sourceTree = "<group>"; };
+		ECA952092010C3EF0031CAB3 /* SCPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPhotoViewController.swift; sourceTree = "<group>"; };
+		ECADB39E2004B3F30097E437 /* SCCameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraButton.swift; sourceTree = "<group>"; };
 		ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraViewController.swift; sourceTree = "<group>"; };
 		ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraViewControllerDelegate.swift; sourceTree = "<group>"; };
 		ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraPreviewView.swift; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */,
+				ECA952072010C2110031CAB3 /* SCMainViewController.swift */,
+				ECA952092010C3EF0031CAB3 /* SCPhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */,
+				ECADB39E2004B3F30097E437 /* SCCameraButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,7 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBB8F041FFE1E2C00DC8E32 /* SCCameraPreviewView.swift in Sources */,
+				ECADB39F2004B3F30097E437 /* SCCameraButton.swift in Sources */,
 				ECBB8EFC1FFE170D00DC8E32 /* SCCameraViewController.swift in Sources */,
+				ECA952082010C2110031CAB3 /* SCMainViewController.swift in Sources */,
+				ECA9520A2010C3EF0031CAB3 /* SCPhotoViewController.swift in Sources */,
 				ECBB8F011FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift in Sources */,
 				EC05B2C31FEA3DE000B074AB /* AppDelegate.swift in Sources */,
 			);
