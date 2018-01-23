@@ -18,6 +18,7 @@
 		ECBB8EFC1FFE170D00DC8E32 /* SCCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */; };
 		ECBB8F011FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */; };
 		ECBB8F041FFE1E2C00DC8E32 /* SCCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */; };
+		ECD2E41220175E8C00BCC185 /* SCVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2E41120175E8C00BCC185 /* SCVideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraViewController.swift; sourceTree = "<group>"; };
 		ECBB8F001FFE1D6200DC8E32 /* SCCameraViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraViewControllerDelegate.swift; sourceTree = "<group>"; };
 		ECBB8F031FFE1E2C00DC8E32 /* SCCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCameraPreviewView.swift; sourceTree = "<group>"; };
+		ECD2E41120175E8C00BCC185 /* SCVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				ECBB8EFB1FFE170D00DC8E32 /* SCCameraViewController.swift */,
 				ECA952072010C2110031CAB3 /* SCMainViewController.swift */,
 				ECA952092010C3EF0031CAB3 /* SCPhotoViewController.swift */,
+				ECD2E41120175E8C00BCC185 /* SCVideoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			files = (
 				ECBB8F041FFE1E2C00DC8E32 /* SCCameraPreviewView.swift in Sources */,
 				ECADB39F2004B3F30097E437 /* SCCameraButton.swift in Sources */,
+				ECD2E41220175E8C00BCC185 /* SCVideoViewController.swift in Sources */,
 				ECBB8EFC1FFE170D00DC8E32 /* SCCameraViewController.swift in Sources */,
 				ECA952082010C2110031CAB3 /* SCMainViewController.swift in Sources */,
 				ECA9520A2010C3EF0031CAB3 /* SCPhotoViewController.swift in Sources */,

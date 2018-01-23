@@ -55,18 +55,19 @@ class SCMainViewController: SCCameraViewController, SCCameraViewControllerDelega
     }
     
     func cameraViewController(_: SCCameraViewController, didBeginRecordingVideo camera: SCCameraViewController.CameraSelection) {
-        
+        captureButton.growButton()
     }
     
     func cameraViewController(_: SCCameraViewController, didFinishRecordingVideo camera: SCCameraViewController.CameraSelection) {
-        
+        captureButton.shrinkButton()
     }
     
     func cameraViewController(_: SCCameraViewController, didFinishProcessVideoAt url: URL) {
-        
+        let videoViewController = SCVideoViewController(videoURL: url)
+        self.present(videoViewController, animated: true, completion: nil)
     }
     
     func cameraViewController(_: SCCameraViewController, didFailToRecordVideo error: Error) {
-        
+        print(error)
     }
 }
